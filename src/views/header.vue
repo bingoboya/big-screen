@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import type {DateDataType} from "./index.d"
 import {useSettingStore} from "@/stores/index"
 
-const toggleSetting = ref(false)
+const toggleSetting = ref(!false)
 const dateData = reactive<DateDataType>({
   dateDay: "",
   dateYear: "",
@@ -30,7 +30,7 @@ timeFn()
     <div class="guang"></div>
     <div class="d-flex jc-center">
       <div class="title">
-        <span class="title-text">定南大华新材料资源有限公司</span>
+        <span class="title-text">新材料资源有限公司</span>
       </div>
     </div>
     <div class="timers" @dblclick="toggleSetting = !toggleSetting" style="user-select: none;">
